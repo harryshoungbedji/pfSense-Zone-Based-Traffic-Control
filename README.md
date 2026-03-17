@@ -20,3 +20,14 @@ Zone-based firewall implementation in pfSense with VirtualBox, showcasing networ
 |WAN (em0) | NAT | 10.0.2.15/24 (DHCP) | Internet  |
 |LAN (em1) | Internal Network - LAN | 192.168.1.1/24  | Trusted    |
 |OPT1 (em2) | Internal Network - WLAN | 10.10.10.1/24  | Untrusted    |
+
+## LAN Firewall Rules (Trusted Zone)
+
+| #    | Action        | Protocol       | Source    | Destination | Port | Purpose |
+|-------|---------------|---------------|---------|--------|------|--------|
+|WAN (em0) | NAT | 10.0.2.15/24 (DHCP) | Internet  | | | |
+|LAN (em1) | Internal Network - LAN | 192.168.1.1/24  | Trusted    |  | | |
+|OPT1 (em2) | Internal Network - WLAN | 10.10.10.1/24  | Untrusted    |  | | |
+
+
+
