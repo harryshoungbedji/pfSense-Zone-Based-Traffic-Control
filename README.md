@@ -6,8 +6,6 @@ Zone-based firewall implementation in pfSense with VirtualBox, showcasing networ
 
 ## Tools & Technologies Used
 
-
-
 | Tool              | Version      | Purpose              |
 |----------------------|------------------------|--------|
 |ViurtalBox | 7.2.6 | Vitualization platform|
@@ -15,5 +13,3 @@ Zone-based firewall implementation in pfSense with VirtualBox, showcasing networ
 |Kali Linux | 2025.4| LAN Client / Testing |
 
 
-| Test Type              | Expected Outcome        | Result |
-|----------------------|------------------------|--------|
