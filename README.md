@@ -13,3 +13,8 @@ Zone-based firewall implementation in pfSense with VirtualBox, showcasing networ
 |Kali Linux | 2025.4| LAN Client / Testing |
 
 
+## Network Design  - Interfaces
+
+| Interface            | Adapter        | IP Address         | Zone      |
+|----------------------|------------------------|--------|--------------|
+|WAN (em0) | NAT | 10.0.2.15/24 (DHCP) | Internet    |
