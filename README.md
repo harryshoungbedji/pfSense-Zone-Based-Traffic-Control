@@ -28,8 +28,8 @@ Note: The firewall rules applied in this lab are intentionally simplified for le
 |LAN (em1)             | Internal Network - LAN   | 192.168.1.1/24    | Trusted     |
 |OPT1 (em2)            | Internal Network - WLAN  | 10.10.10.1/24     |Untrusted    |
 
-## LAN Firewall Rules (Trusted Zone) [pfSense processes firewall rules
-sequentially from top to bottom, stopping at the first rule that matches the traffic.]
+## LAN Firewall Rules (Trusted Zone) 
+pfSense processes firewall rules sequentially from top to bottom, stopping at the first rule that matches the traffic.
 
 | #    | Action        | Protocol       | Source      | Destination | Port | Purpose |
 |-------|--------------|---------------|--------------|-------------|------|--------|
@@ -44,12 +44,15 @@ sequentially from top to bottom, stopping at the first rule that matches the tra
 |9      | Block        | Any           | LAN subnets  | Any        | Any  | Default Deny All    |
 
 ## WLAN Firewall Rules (Untrusted/Guest Zone)
-1 | Block | Any | OPT1 subnets | LAN subnets | Any | Block WLAN to LAN
-2 | Allow | UDP | OPT1 subnets | 10.10.10.1 | 53 | DNS to firewall only
-3 | Allow | TCP | OPT1 subnets | Any | 443 | HTTPS only
-4 | Block | TCP | OPT1 subnets | Any | 80 | Block HTTP
-5 | Block | TCP | OPT1 subnets | Any | 22 | Block SSH
-6 | Block | Any | OPT1 subnets | Any | Any | Default deny all
+
+| #    | Action        | Protocol       | Source      | Destination | Port | Purpose |
+|-------|--------------|---------------|--------------|-------------|------|--------|
+|1 | Block | Any | OPT1 subnets | LAN subnets | Any | Block WLAN to LAN|
+|2 | Allow | UDP | OPT1 subnets | 10.10.10.1 | 53 | DNS to firewall only|
+|3 | Allow | TCP | OPT1 subnets | Any | 443 | HTTPS only|
+|4 | Block | TCP | OPT1 subnets | Any | 80 | Block HTTP|
+|5 | Block | TCP | OPT1 subnets | Any | 22 | Block SSH|
+|6 | Block | Any | OPT1 subnets | Any | Any | Default deny all|
 
 
 
