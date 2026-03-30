@@ -19,5 +19,5 @@ blocking untrusted WLAN from reaching internal resources.
 All validation tests passed — see screenshots folder.
 
 ## Full Documentation
-See docs/firewall-lab-wlan-lan-segmentation.pdf
+See docs/firewall-lab
 ```
